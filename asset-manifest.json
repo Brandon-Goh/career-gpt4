@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-gpt4/static/css/main.7809376f.css",
-    "main.js": "/career-gpt4/static/js/main.8095d7f8.js",
+    "main.js": "/career-gpt4/static/js/main.9f6a12ed.js",
     "static/media/hero-image-1.png": "/career-gpt4/static/media/hero-image-1.33f10ca8d00cbcdb340e.png",
     "static/media/header.jpg": "/career-gpt4/static/media/header.2cb9b14bf49346eb410d.jpg",
     "static/media/hero-image-2.png": "/career-gpt4/static/media/hero-image-2.876d72184b5448408fd8.png",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.7809376f.css",
-    "static/js/main.8095d7f8.js"
+    "static/js/main.9f6a12ed.js"
   ]
 }
