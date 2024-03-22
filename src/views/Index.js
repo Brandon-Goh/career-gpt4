@@ -24,6 +24,8 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
+import LandingPage from "./examples/LandingPage.js";
+import LandingGPTPage from "./examples/LandingGPTPage.js";
 
 function Index() {
   React.useEffect(() => {
@@ -39,7 +41,8 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <LandingGPTPage />
+      {/* <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
@@ -59,7 +62,7 @@ function Index() {
           <Download />
         </div>
         <DarkFooter />
-      </div>
+      </div> */}
     </>
   );
 }

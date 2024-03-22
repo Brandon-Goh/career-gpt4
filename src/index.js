@@ -17,7 +17,13 @@
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+// import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -34,15 +40,15 @@ import ProfilePage from "views/examples/ProfilePage.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <Router>
     <Routes>
-      <Route path="/index" element={<Index />} />
+      <Route path="/" element={<Index />} />
       <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/login-page" element={<LoginPage />} />
 
-      <Route path="*" element={<Navigate to="/index" replace />} />
+      {/* No need for the catch-all route */}
     </Routes>
-  </BrowserRouter>
+  </Router>
 );
