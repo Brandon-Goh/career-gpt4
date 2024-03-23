@@ -33,7 +33,7 @@ function LandingPageHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">CareerGPT</h1>
+            <h1 className="title">AICareerPal</h1>
             <div className="text-center">
               <h3>To help guide you through your dream career path</h3>
               {/* <Button

@@ -36,6 +36,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import UserResearchPage from "views/examples/UserResearchPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -43,6 +44,7 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<Index />} />
+      <Route path="/user-research" element={<UserResearchPage />} />
       <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -39,9 +39,12 @@ function LandingGPTPage() {
         <div className="section section-about-us">
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
+              <Col className="ml-auto mr-auto text-center" md="12">
                 <h2 className="title">Problem</h2>
-                <h5 className="description">
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
                   There is a lack of clear guidance for individuals who feel
                   overwhelmed or lost in pursuing their dream careers or
                   personal interests. Many people struggle to identify the
@@ -92,7 +95,9 @@ function LandingGPTPage() {
                       style={{
                         listStyleType: "circle",
                         textAlign: "left",
-                        width: "700px",
+                        width: "600px",
+                        color: "black",
+                        fontWeight: "500",
                       }}
                     >
                       <li>
@@ -131,18 +136,21 @@ function LandingGPTPage() {
           style={{
             paddingTop: "0px",
             paddingBottom: "20px",
-            marginTop: "-100px",
+            marginTop: "-50px",
             marginBottom: "0",
           }}
         >
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
+              <Col className="ml-auto mr-auto text-center" md="12">
                 <h2 className="title">Solution</h2>
-                <h5 className="description">
-                  CareerGPT aims to bridge this gap by providing tailored advice
-                  and resources to help users navigate their career paths with
-                  confidence and clarity.
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  AICareerPal aims to bridge this gap by providing tailored
+                  advice and resources to help users navigate their career paths
+                  with confidence and clarity.
                 </h5>
               </Col>
             </Row>
@@ -150,13 +158,15 @@ function LandingGPTPage() {
             <div className="section-story-overview">
               <Row>
                 <Col md="5">
-                  <h3>More specifically...</h3>
+                  <h3>Features:</h3>
                   <p>
                     <ul
                       style={{
                         listStyleType: "circle",
                         textAlign: "left",
                         width: "700px",
+                        color: "black",
+                        fontWeight: "500",
                       }}
                     >
                       <li>
@@ -201,6 +211,211 @@ function LandingGPTPage() {
             </div>
           </Container>
         </div>
+        <div className="section section-about-us">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Market Research</h2>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Competitors help users determine the next job or career path.
+                  They also support users throughout the job application process
+                  - finding jobs, writing resumes, submitting forms, preparing
+                  for interviews, etc. However, they don’t allow users to define
+                  their end goal (ex. dream job) and provide guidance on how to
+                  get there.
+                </h5>
+              </Col>
+            </Row>
+            <div className="separator separator-primary"></div>
+            <div className="section-story-overview">
+              <Row>
+                <Col md="5">
+                  <p style={{ color: "black", fontWeight: "500" }}>
+                    <table
+                      style={{
+                        width: "1200px",
+                        borderCollapse: "collapse",
+                        border: "1px solid black",
+                      }}
+                    >
+                      <thead>
+                        <tr>
+                          <th style={{ border: "1px solid black" }}>
+                            Competitor
+                          </th>
+                          <th style={{ border: "1px solid black" }}>
+                            Description
+                          </th>
+                          <th style={{ border: "1px solid black" }}>
+                            Main Features
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
+                              LinkedIn
+                            </a>
+                            <br></br>
+                            {/* <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                              alt="LinkedIn Logo"
+                              style={{
+                                width: "50px",
+                                margin: "auto",
+                                display: "block",
+                              }}
+                            /> */}
+                          </td>
+                          <td
+                            style={{ border: "1px solid black", width: "60%" }}
+                          >
+                            This tool is a social networking platform focused on
+                            employment. It uses AI algorithms for suggesting
+                            network connections, making job recommendations, and
+                            populating social media feed.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Potential employees:</li>
+                              <ul>
+                                <li>Job recommendations</li>
+                                <li>Connection recommendations</li>
+                                <li>AI-assisted messages</li>
+                              </ul>
+                              <li>Employers:</li>
+                              <ul>
+                                <li>Generating job descriptions</li>
+                              </ul>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://www.jobcopy.io/">Jobcopy</a>
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            This tool uses an AI model to write resumes and
+                            cover letters for specific jobs.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Job-seekers:</li>
+                              <ul>
+                                <li>Job compatibility calculator</li>
+                                <li>Resume generator</li>
+                                <li>Cover letter generator</li>
+                                <li>Interview Q&A generator</li>
+                              </ul>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://applypass.com/">ApplyPass</a>
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            This tool automatically matches profiles to jobs and
+                            applies on behalf of the applicant using AI.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Job-appliers:</li>
+                              <ul>
+                                <li>Profile matching with jobs</li>
+                                <li>
+                                  Auto-fill and submissions of job applications
+                                </li>
+                              </ul>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://www.finalroundai.com/interview-copilot">
+                              Final Round AI
+                            </a>
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            This tool uses AI-powered chatbots to help prepare
+                            users for interviews. It is also used unethically
+                            during actual interviews.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Job-interviewers:</li>
+                              <ul>
+                                <li>Live transcription</li>
+                                <li>AI-powered mock interviews</li>
+                                <li>Technical assessment support</li>
+                                <li>Case analysis support</li>
+                              </ul>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://www.futurefit.ai/">FutureFit AI</a>
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            Given a career starting point, this tool helps
+                            navigate users to the best career destination by
+                            sharing learning opportunities, resources, and jobs.
+                            Recommendations are based on an AI model that
+                            leverages data related to the labor market.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Career-seekers:</li>
+                              <ul>
+                                <li>
+                                  Assessments to figure out career starting
+                                  point
+                                </li>
+                                <li>Recommendations for career destination</li>
+                                <li>Educational programs to teach skills</li>
+                                <li>Resources for job preparation</li>
+                                <li>Work opportunities</li>
+                              </ul>
+                              <li>Career coaches:</li>
+                              <ul>
+                                <li>Send resources</li>
+                                <li>Track progress</li>
+                                <li>Document notes</li>
+                              </ul>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            Blueprint
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            A tool used in high school to help students figure
+                            out an appropriate career path and then take
+                            appropriate courses in preparation for applying to
+                            relevant university programs.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Personality quiz for career selection</li>
+                              <li>University program recommendations</li>
+                              <li>Course planning guide</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </p>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </div>
         <div className="section section-team text-center">
           <Container>
             <h2 className="title">User Personas</h2>
@@ -215,7 +430,10 @@ function LandingGPTPage() {
                     ></img>
                     <h4 className="title">Career Focused Student</h4>
                     <p className="category text-info">Persona one</p>
-                    <p className="description">
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
                       A user who knows their dream career and have been able to
                       find work opportunities in the field.
                     </p>
@@ -238,7 +456,10 @@ function LandingGPTPage() {
                     ></img>
                     <h4 className="title">Career Starter Student</h4>
                     <p className="category text-info">Persona two</p>
-                    <p className="description">
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
                       A user who knows their dream career, however, they do not
                       know how to pursue it.
                     </p>
@@ -261,7 +482,10 @@ function LandingGPTPage() {
                     ></img>
                     <h4 className="title">Career Curious Student</h4>
                     <p className="category text-info">Persona three</p>
-                    <p className="description">
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
                       A user who does not have a dream career but would like to
                       determine one.
                     </p>
@@ -279,6 +503,22 @@ function LandingGPTPage() {
             </div>
           </Container>
         </div>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">User Research</h2>
+              <Button
+                className="btn-round"
+                color="info"
+                size="lg"
+                tag={Link}
+                to="/user-research"
+              >
+                Go to user research
+              </Button>
+            </Col>
+          </Row>
+        </Container>
         {/* <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>

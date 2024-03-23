@@ -88,15 +88,11 @@ function ExamplesNavbar() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              target="_blank"
-              id="navbar-brand"
-            >
-              Now Ui Kit
+            <NavbarBrand tag={Link} to="/" id="navbar-brand">
+              AICareerPal
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              To help guide you through your dream career path
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -117,7 +113,7 @@ function ExamplesNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
+            {/* <Nav navbar>
               <NavItem>
                 <NavLink to="/index" tag={Link}>
                   Back to Kit
@@ -167,7 +163,7 @@ function ExamplesNavbar() {
                   Follow us on Instagram
                 </UncontrolledTooltip>
               </NavItem>
-            </Nav>
+            </Nav> */}
           </Collapse>
         </Container>
       </Navbar>
