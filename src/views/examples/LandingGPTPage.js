@@ -416,6 +416,154 @@ function LandingGPTPage() {
             </div>
           </Container>
         </div>
+
+        <div className="section section-team text-center">
+          <Container>
+            <h2 className="title">Usability Goals</h2>
+            <div className="team">
+              <Row>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Effective to use</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      <lu>
+                        <li>Time to complete tasks</li>
+                      </lu>
+                    </p>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Efficient to use</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      <lu>
+                        <li>Time to complete tasks</li>
+                        <li>Error rates</li>
+                      </lu>
+                    </p>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Has good utility</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      <lu>
+                        <li>Time to complete tasks with available tools</li>
+                        <li>Easy to remember how to use</li>
+                        <li>Time to complete tasks</li>
+                        <li>Error rates</li>
+                      </lu>
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </div>
+
+        <div className="section section-team text-center">
+          <Container>
+            <h2 className="title">User Experience Goals</h2>
+            <div className="team">
+              <Row>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Insightful</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel that the app provides insight into
+                      potential career paths and their respective
+                      skills/requirements
+                    </p>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Effortless</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel that the experience is effortless while
+                      using the system
+                    </p>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <h4 className="title">Personal</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel that the career suggestions are catered
+                      towards their personal goals
+                    </p>
+                  </div>
+                </Col>
+                <Col md="3">
+                  <div className="team-player">
+                    <h4 className="title">Clear</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel the information presented on the website
+                      is clear
+                    </p>
+                  </div>
+                </Col>
+                <Col md="3">
+                  <div className="team-player">
+                    <h4 className="title">Confident</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel confident in their interactions with the
+                      website
+                    </p>
+                  </div>
+                </Col>
+                <Col md="3">
+                  <div className="team-player">
+                    <h4 className="title">Connected</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel connected with other professionals
+                    </p>
+                  </div>
+                </Col>
+                <Col md="3">
+                  <div className="team-player">
+                    <h4 className="title">Relevant</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      Users should feel that the information presented on the
+                      app is relevant for their situation and goals
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </div>
+
         <div className="section section-team text-center">
           <Container>
             <h2 className="title">User Personas</h2>
@@ -516,6 +664,204 @@ function LandingGPTPage() {
               >
                 Go to user research
               </Button>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">User Flow - User Journey Map</h2>
+              <p
+                style={{
+                  border: "2px solid black",
+                  color: "black",
+                  fontWeight: "500",
+                }}
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Users</th>
+                      <th>LTR Rating</th>
+                      <th>Touch Point</th>
+                      <th>Doing</th>
+                      <th>Thinking</th>
+                      <th>Feeling</th>
+                      <th>Recommendation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="7">3</td>
+                      <td rowspan="7">2</td>
+                      <td>Creates Account</td>
+                      <td>Enter email</td>
+                      <td>Do I want to sign up for this?</td>
+                      <td>
+                        Skeptical of whether the app will have the functionality
+                        they want.
+                      </td>
+                      <td>
+                        Provide information on how the app will help guide the
+                        user.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Uploads Resume and Completes Quiz</td>
+                      <td>Enter password</td>
+                      <td>What does this app do?</td>
+                      <td>Overwhelmed with the amount of questions.</td>
+                      <td>
+                        Allow the user to skip questions or have a “I’m not
+                        sure” option.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Starting Points</td>
+                      <td>Upload resume</td>
+                      <td>
+                        What industries do I want to work in? Do I know what
+                        industries I want to work in?
+                      </td>
+                      <td>Unsure of what career I like the best.</td>
+                      <td>
+                        Give users a suggested priority list based on their
+                        skillset.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Paths</td>
+                      <td>Selects industries of interest</td>
+                      <td>What working preferences do I have?</td>
+                      <td>
+                        Happy with the recommendations and excited to learn
+                        more.
+                      </td>
+                      <td>
+                        Allow users to give the app feedback about the
+                        recommendations and to query for new suggestions.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Skills & Resources</td>
+                      <td>Selects working preferences</td>
+                      <td>Do the recommendations match my expectations?</td>
+                      <td>Unsatisfied with the recommendations.</td>
+                      <td>
+                        Give users a suggested priority list career pathway
+                        skills or income.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Doing</td>
+                      <td>Read through recommended career descriptions.</td>
+                      <td>Am I interested in any of these careers?</td>
+                      <td>
+                        Happy with the recommendations and excited to learn
+                        more.
+                      </td>
+                      <td>
+                        Allow users to give the app feedback about the
+                        recommendations and to query for new suggestions.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Thinking</td>
+                      <td>Select career starting point.</td>
+                      <td>
+                        Do any of the career paths match my
+                        expectations/desires?
+                      </td>
+                      <td>Unsure of what career pathway I like the best.</td>
+                      <td>Allow users to save the career and look for more.</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="7">5</td>
+                      <td rowspan="7">6</td>
+                      <td>Creates Account</td>
+                      <td>Enter email</td>
+                      <td>Do I want to sign up for this?</td>
+                      <td>
+                        Happy with the recommendations and excited to learn
+                        more.
+                      </td>
+                      <td>
+                        Provide information on how the app will help guide the
+                        user.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Uploads Resume and Completes Quiz</td>
+                      <td>Enter password</td>
+                      <td>What does this app do?</td>
+                      <td>Overwhelmed with the amount of questions.</td>
+                      <td>
+                        Allow the user to skip questions or have a “I’m not
+                        sure” option.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Starting Points</td>
+                      <td>Upload resume</td>
+                      <td>
+                        What industries do I want to work in? Do I know what
+                        industries I want to work in?
+                      </td>
+                      <td>Unsure of what career I like the best.</td>
+                      <td>
+                        Give users a suggested priority list based on their
+                        skillset.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Paths</td>
+                      <td>Selects industries of interest</td>
+                      <td>What working preferences do I have?</td>
+                      <td>
+                        Happy with the recommendations and excited to learn
+                        more.
+                      </td>
+                      <td>
+                        Allow users to give the app feedback about the
+                        recommendations and to query for new suggestions.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Explore Career Skills & Resources</td>
+                      <td>Selects working preferences</td>
+                      <td>Do the recommendations match my expectations?</td>
+                      <td>Unsatisfied with the recommendations.</td>
+                      <td>
+                        Give users a suggested priority list career pathway
+                        skills or income.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Doing</td>
+                      <td>Read through recommended career descriptions.</td>
+                      <td>Am I interested in any of these careers?</td>
+                      <td>
+                        Happy with the recommendations and excited to learn
+                        more.
+                      </td>
+                      <td>
+                        Allow users to give the app feedback about the
+                        recommendations and to query for new suggestions.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Thinking</td>
+                      <td>Select career starting point.</td>
+                      <td>
+                        Do any of the career paths match my
+                        expectations/desires?
+                      </td>
+                      <td>Unsure of what career pathway I like the best.</td>
+                      <td>Allow users to save the career and look for more.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
             </Col>
           </Row>
         </Container>
