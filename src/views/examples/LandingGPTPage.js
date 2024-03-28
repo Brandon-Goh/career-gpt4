@@ -31,6 +31,15 @@ function LandingGPTPage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
+  const columns = ["Users", "LTR Rating", "Touch Point"];
+  const rows = [
+    ["User 1", "5", "Create account"],
+    ["User 2", "5", "Upload resume"],
+    ["User 3", "6", "Explore career starting points"],
+    ["User 4", "5", "Explore career paths"],
+    ["User 5", "7", "Explore career skills & resources"],
+  ];
   return (
     <>
       <ExamplesNavbar />
@@ -392,7 +401,7 @@ function LandingGPTPage() {
                         </tr>
                         <tr>
                           <td style={{ border: "1px solid black" }}>
-                            Blueprint
+                            <a href="https://myblueprint.ca/">Blueprint</a>
                           </td>
                           <td style={{ border: "1px solid black" }}>
                             A tool used in high school to help students figure
@@ -405,6 +414,23 @@ function LandingGPTPage() {
                               <li>Personality quiz for career selection</li>
                               <li>University program recommendations</li>
                               <li>Course planning guide</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ border: "1px solid black" }}>
+                            <a href="https://careergpt.xyz/">CareerGPT</a>
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            An AI tool that helps connect professionals with
+                            appropriate career coaches.
+                          </td>
+                          <td style={{ border: "1px solid black" }}>
+                            <ul>
+                              <li>Resume review</li>
+                              <li>Candidate search</li>
+                              <li>Recruiter search</li>
+                              <li>Career coach connection</li>
                             </ul>
                           </td>
                         </tr>
@@ -422,7 +448,7 @@ function LandingGPTPage() {
             <h2 className="title">Usability Goals</h2>
             <div className="team">
               <Row>
-                <Col md="4">
+                <Col md="3">
                   <div className="team-player">
                     <h4 className="title">Effective to use</h4>
                     <p
@@ -435,7 +461,7 @@ function LandingGPTPage() {
                     </p>
                   </div>
                 </Col>
-                <Col md="4">
+                <Col md="3">
                   <div className="team-player">
                     <h4 className="title">Efficient to use</h4>
                     <p
@@ -449,7 +475,7 @@ function LandingGPTPage() {
                     </p>
                   </div>
                 </Col>
-                <Col md="4">
+                <Col md="3">
                   <div className="team-player">
                     <h4 className="title">Has good utility</h4>
                     <p
@@ -458,7 +484,18 @@ function LandingGPTPage() {
                     >
                       <lu>
                         <li>Time to complete tasks with available tools</li>
-                        <li>Easy to remember how to use</li>
+                      </lu>
+                    </p>
+                  </div>
+                </Col>
+                <Col md="3">
+                  <div className="team-player">
+                    <h4 className="title">Easy to remember how to use</h4>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      <lu>
                         <li>Time to complete tasks</li>
                         <li>Error rates</li>
                       </lu>
@@ -670,198 +707,148 @@ function LandingGPTPage() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">User Flow - User Journey Map</h2>
-              <p
-                style={{
-                  border: "2px solid black",
-                  color: "black",
-                  fontWeight: "500",
-                }}
+              <h2 className="title">User Testing Protocol</h2>
+              <h4>Round 1: User Experience Research Procedure</h4>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
               >
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Users</th>
-                      <th>LTR Rating</th>
-                      <th>Touch Point</th>
-                      <th>Doing</th>
-                      <th>Thinking</th>
-                      <th>Feeling</th>
-                      <th>Recommendation</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td rowspan="7">3</td>
-                      <td rowspan="7">2</td>
-                      <td>Creates Account</td>
-                      <td>Enter email</td>
-                      <td>Do I want to sign up for this?</td>
-                      <td>
-                        Skeptical of whether the app will have the functionality
-                        they want.
-                      </td>
-                      <td>
-                        Provide information on how the app will help guide the
-                        user.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Uploads Resume and Completes Quiz</td>
-                      <td>Enter password</td>
-                      <td>What does this app do?</td>
-                      <td>Overwhelmed with the amount of questions.</td>
-                      <td>
-                        Allow the user to skip questions or have a “I’m not
-                        sure” option.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Starting Points</td>
-                      <td>Upload resume</td>
-                      <td>
-                        What industries do I want to work in? Do I know what
-                        industries I want to work in?
-                      </td>
-                      <td>Unsure of what career I like the best.</td>
-                      <td>
-                        Give users a suggested priority list based on their
-                        skillset.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Paths</td>
-                      <td>Selects industries of interest</td>
-                      <td>What working preferences do I have?</td>
-                      <td>
-                        Happy with the recommendations and excited to learn
-                        more.
-                      </td>
-                      <td>
-                        Allow users to give the app feedback about the
-                        recommendations and to query for new suggestions.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Skills & Resources</td>
-                      <td>Selects working preferences</td>
-                      <td>Do the recommendations match my expectations?</td>
-                      <td>Unsatisfied with the recommendations.</td>
-                      <td>
-                        Give users a suggested priority list career pathway
-                        skills or income.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Doing</td>
-                      <td>Read through recommended career descriptions.</td>
-                      <td>Am I interested in any of these careers?</td>
-                      <td>
-                        Happy with the recommendations and excited to learn
-                        more.
-                      </td>
-                      <td>
-                        Allow users to give the app feedback about the
-                        recommendations and to query for new suggestions.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Thinking</td>
-                      <td>Select career starting point.</td>
-                      <td>
-                        Do any of the career paths match my
-                        expectations/desires?
-                      </td>
-                      <td>Unsure of what career pathway I like the best.</td>
-                      <td>Allow users to save the career and look for more.</td>
-                    </tr>
-                    <tr>
-                      <td rowspan="7">5</td>
-                      <td rowspan="7">6</td>
-                      <td>Creates Account</td>
-                      <td>Enter email</td>
-                      <td>Do I want to sign up for this?</td>
-                      <td>
-                        Happy with the recommendations and excited to learn
-                        more.
-                      </td>
-                      <td>
-                        Provide information on how the app will help guide the
-                        user.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Uploads Resume and Completes Quiz</td>
-                      <td>Enter password</td>
-                      <td>What does this app do?</td>
-                      <td>Overwhelmed with the amount of questions.</td>
-                      <td>
-                        Allow the user to skip questions or have a “I’m not
-                        sure” option.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Starting Points</td>
-                      <td>Upload resume</td>
-                      <td>
-                        What industries do I want to work in? Do I know what
-                        industries I want to work in?
-                      </td>
-                      <td>Unsure of what career I like the best.</td>
-                      <td>
-                        Give users a suggested priority list based on their
-                        skillset.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Paths</td>
-                      <td>Selects industries of interest</td>
-                      <td>What working preferences do I have?</td>
-                      <td>
-                        Happy with the recommendations and excited to learn
-                        more.
-                      </td>
-                      <td>
-                        Allow users to give the app feedback about the
-                        recommendations and to query for new suggestions.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Explore Career Skills & Resources</td>
-                      <td>Selects working preferences</td>
-                      <td>Do the recommendations match my expectations?</td>
-                      <td>Unsatisfied with the recommendations.</td>
-                      <td>
-                        Give users a suggested priority list career pathway
-                        skills or income.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Doing</td>
-                      <td>Read through recommended career descriptions.</td>
-                      <td>Am I interested in any of these careers?</td>
-                      <td>
-                        Happy with the recommendations and excited to learn
-                        more.
-                      </td>
-                      <td>
-                        Allow users to give the app feedback about the
-                        recommendations and to query for new suggestions.
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Thinking</td>
-                      <td>Select career starting point.</td>
-                      <td>
-                        Do any of the career paths match my
-                        expectations/desires?
-                      </td>
-                      <td>Unsure of what career pathway I like the best.</td>
-                      <td>Allow users to save the career and look for more.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </p>
+                Participants: 3 - 1 persona for each
+              </h5>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                <ol>
+                  <li>
+                    Ask users to walk through wireframes, talking aloud about
+                    what they are doing, feeling and thinking.
+                  </li>
+                  <li>
+                    After each touch point ask the participant about any pain
+                    points they encountered and their LTR score from 1-7.
+                  </li>
+                </ol>
+              </h5>
+              <h4 className="title">User Flow - User Journey Map</h4>
+              <img alt="..." src={require("assets/img/journey-map.png")}></img>
+              <h4>Round 2: Usability Research Procedure</h4>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                Role Playing: You are a student that is looking to find their
+                dream career pathway
+                <br />
+                Tasks:
+              </h5>
+            </Col>
+            <br></br>
+            <h5
+              className="description"
+              style={{ color: "black", fontWeight: "500" }}
+            >
+              Choose a starting point for your career
+              <ul>
+                <li>
+                  Time to find
+                  <ul>
+                    <li>Expert:</li>
+                  </ul>
+                </li>
+                <li>
+                  Number of errors
+                  <ul>
+                    <li>Expert:</li>
+                  </ul>
+                </li>
+                <li>
+                  Other tools used
+                  <ul>
+                    <li>None</li>
+                  </ul>
+                </li>
+              </ul>
+            </h5>
+            <br></br>
+          </Row>
+          <h5
+            className="description"
+            style={{ color: "black", fontWeight: "500" }}
+          >
+            Choose a career pathway
+            <ul>
+              <li>
+                Time to find
+                <ul>
+                  <li>Expert:</li>
+                </ul>
+              </li>
+              <li>
+                Number of errors
+                <ul>
+                  <li>Expert: 0</li>
+                </ul>
+              </li>
+              <li>
+                Other tools used
+                <ul>
+                  <li>Google search to find circulation desk</li>
+                  <li>DP floor plan</li>
+                </ul>
+              </li>
+            </ul>
+          </h5>
+        </Container>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">Key Findings</h2>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                TODO
+              </h5>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">Design Iterations</h2>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                TODO
+              </h5>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">Final Prototype</h2>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                TODO
+              </h5>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="12">
+              <h2 className="title">Reflections</h2>
+              <h5
+                className="description"
+                style={{ color: "black", fontWeight: "500" }}
+              >
+                TODO
+              </h5>
             </Col>
           </Row>
         </Container>
