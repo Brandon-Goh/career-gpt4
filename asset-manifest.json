@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-gpt4/static/css/main.7809376f.css",
-    "main.js": "/career-gpt4/static/js/main.3e805a7c.js",
+    "main.js": "/career-gpt4/static/js/main.eb493b27.js",
     "static/media/hero-image-1.png": "/career-gpt4/static/media/hero-image-1.33f10ca8d00cbcdb340e.png",
     "static/media/header.jpg": "/career-gpt4/static/media/header.2cb9b14bf49346eb410d.jpg",
     "static/media/hero-image-2.png": "/career-gpt4/static/media/hero-image-2.876d72184b5448408fd8.png",
@@ -14,6 +14,7 @@
     "static/media/bg7.jpg": "/career-gpt4/static/media/bg7.6249276d677cd6fd680e.jpg",
     "static/media/bg5.jpg": "/career-gpt4/static/media/bg5.d60a95eb31d6400f802f.jpg",
     "static/media/bg8.jpg": "/career-gpt4/static/media/bg8.2c89438b189a2a391f19.jpg",
+    "static/media/journey-map.png": "/career-gpt4/static/media/journey-map.0e7a8556eb1fbc9098dc.png",
     "static/media/landing.jpg": "/career-gpt4/static/media/landing.6fa0380a8b02ebaadb6a.jpg",
     "static/media/profile.jpg": "/career-gpt4/static/media/profile.5f3b8e69153598f8dd2a.jpg",
     "static/media/hero-image-3.png": "/career-gpt4/static/media/hero-image-3.c3efe2e448da3816cf3b.png",
@@ -31,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.7809376f.css",
-    "static/js/main.3e805a7c.js"
+    "static/js/main.eb493b27.js"
   ]
 }
