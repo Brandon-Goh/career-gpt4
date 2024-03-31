@@ -167,43 +167,15 @@ function LandingGPTPage() {
             <div className="section-story-overview">
               <Row>
                 <Col md="5">
-                  <h3>Features:</h3>
-                  <p>
-                    <ul
-                      style={{
-                        listStyleType: "circle",
-                        textAlign: "left",
-                        width: "700px",
-                        color: "black",
-                        fontWeight: "500",
-                      }}
-                    >
-                      <li>
-                        Understanding the common challenges and barriers
-                        individuals face when trying to pursue their dream
-                        careers or personal interests.
-                      </li>
-                      <li>
-                        Identifying the specific skills, qualifications, and
-                        experiences required for various career paths or
-                        personal goals.
-                      </li>
-                      <li>
-                        Investigating the availability and effectiveness of
-                        existing career guidance resources and platforms.
-                      </li>
-                      <li>
-                        Exploring the preferences and behaviors of users when
-                        seeking career advice or skill development opportunities
-                        online.
-                      </li>
-                      <li>
-                        Assessing the impact of personalized guidance and
-                        practical steps on individuals&apos; motivation and
-                        success in achieving their goals.
-                      </li>
-                    </ul>
-                  </p>
+                  <h3>Situation Impact Statement</h3>
+                  <h5
+                    className="description"
+                    style={{ color: "black", fontWeight: "500" }}
+                  >
+                    Design an app to be used by post-secondary students that
+                    provides guidance, personalized recommendations and adequate
+                    resources for potential careers.
+                  </h5>
                 </Col>
                 <Col md="6">
                   <div
@@ -438,6 +410,7 @@ function LandingGPTPage() {
                     </table>
                   </p>
                 </Col>
+                <img alt="..." src={require("assets/img/comp.png")}></img>
               </Row>
             </div>
           </Container>
@@ -688,51 +661,65 @@ function LandingGPTPage() {
             </div>
           </Container>
         </div>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">User Research</h2>
-              <Button
-                className="btn-round"
-                color="info"
-                size="lg"
-                tag={Link}
-                to="/user-research"
-              >
-                Go to user research
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">User Testing Protocol</h2>
-              <h4>Round 1: User Experience Research Procedure</h4>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                Participants: 3 - 1 persona for each
-              </h5>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                <ol>
-                  <li>
-                    Ask users to walk through wireframes, talking aloud about
-                    what they are doing, feeling and thinking.
-                  </li>
-                  <li>
-                    After each touch point ask the participant about any pain
-                    points they encountered and their LTR score from 1-7.
-                  </li>
-                </ol>
-              </h5>
-              <h4 className="title">User Flow - User Journey Map</h4>
-              <img alt="..." src={require("assets/img/journey-map.png")}></img>
-              <h4>Round 2: Usability Research Procedure</h4>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">User Research</h2>
+                <Button
+                  className="btn-round"
+                  color="info"
+                  size="lg"
+                  tag={Link}
+                  to="/user-research"
+                >
+                  Go to user research
+                </Button>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">User Testing Protocol</h2>
+                <h4>User Experience Research Procedure</h4>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Participants: 3 - 1 persona for each
+                </h5>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  <ol>
+                    <li>
+                      Ask users to walk through wireframes, talking aloud about
+                      what they are doing, feeling and thinking.
+                    </li>
+                    <li>
+                      After each touch point ask the participant about any pain
+                      points they encountered and their LTR score from 1-7.
+                    </li>
+                  </ol>
+                </h5>
+
+                <h4 className="title">User Flow - User Journey Map</h4>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Below is the final user journey map, incorporating scores
+                  averaged across all participants.
+                </h5>
+                <img
+                  alt="..."
+                  src={require("assets/img/journey-map.png")}
+                ></img>
+                {/* <h4>Round 2: Usability Research Procedure</h4>
               <h5
                 className="description"
                 style={{ color: "black", fontWeight: "500" }}
@@ -741,9 +728,9 @@ function LandingGPTPage() {
                 dream career pathway
                 <br />
                 Tasks:
-              </h5>
-            </Col>
-            <br></br>
+              </h5> */}
+              </Col>
+              {/* <br></br>
             <h5
               className="description"
               style={{ color: "black", fontWeight: "500" }}
@@ -770,9 +757,9 @@ function LandingGPTPage() {
                 </li>
               </ul>
             </h5>
-            <br></br>
-          </Row>
-          <h5
+            <br></br> */}
+            </Row>
+            {/* <h5
             className="description"
             style={{ color: "black", fontWeight: "500" }}
           >
@@ -798,60 +785,131 @@ function LandingGPTPage() {
                 </ul>
               </li>
             </ul>
-          </h5>
-        </Container>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">Key Findings</h2>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                TODO
-              </h5>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">Design Iterations</h2>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                TODO
-              </h5>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">Final Prototype</h2>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                TODO
-              </h5>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">Reflections</h2>
-              <h5
-                className="description"
-                style={{ color: "black", fontWeight: "500" }}
-              >
-                TODO
-              </h5>
-            </Col>
-          </Row>
-        </Container>
+          </h5> */}
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Key Findings</h2>
+                <h3>Pleasure Points</h3>
+                <p>
+                  <ul
+                    style={{
+                      listStyleType: "circle",
+                      textAlign: "center",
+                      // width: "600px",
+                      color: "black",
+                      fontWeight: "500",
+                    }}
+                  >
+                    <li>
+                      Users felt that they could easily explore and effectively
+                      evaluate career options.
+                    </li>
+                    <li>
+                      Users enjoyed the simplistic design and felt the solution
+                      was intuitive.
+                    </li>
+                    <li>
+                      Users appreciated the guidance and resources provided for
+                      skill development.
+                    </li>
+                  </ul>
+                </p>
+                <h3>Pain Points</h3>
+                <p>
+                  <ul
+                    style={{
+                      listStyleType: "circle",
+                      textAlign: "center",
+                      // width: "600px",
+                      color: "black",
+                      fontWeight: "500",
+                    }}
+                  >
+                    <li>
+                      Users often required clarification surrounding the content
+                      presented.
+                    </li>
+                    <li>Users felt the career options were limited.</li>
+                    <li>
+                      Users felt that there was no clear end to the user
+                      journey.
+                    </li>
+                  </ul>
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Hierarchical Task Analysis</h2>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  A hierarchical task analysis was used to arrange the key
+                  functionality into a hierarchical format. This helped
+                  determine the main workflows and pages that would be required
+                  in the mobile application.
+                </h5>
+                <img alt="..." src={require("assets/img/wew.png")}></img>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Design Iterations</h2>
+                <h4>First Iteration</h4>
+                <img alt="..." src={require("assets/img/A.png")}></img>
+                <img alt="..." src={require("assets/img/B.png")}></img>
+                <img alt="..." src={require("assets/img/C.png")}></img>
+                <h4>Design Recommendations</h4>
+                <img alt="..." src={require("assets/img/DR.png")}></img>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Final Prototype</h2>
+                <img alt="..." src={require("assets/img/f1.png")}></img>
+                <img alt="..." src={require("assets/img/f2.png")}></img>
+                <h4>Example pathway: Associate software engineer</h4>
+                <img alt="..." src={require("assets/img/c1.png")}></img>
+                <img alt="..." src={require("assets/img/c2.png")}></img>
+                <h4>Example pathway: Medical school student</h4>
+                <img alt="..." src={require("assets/img/d1.png")}></img>
+                <img alt="..." src={require("assets/img/d2.png")}></img>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title">Reflections</h2>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  TODO
+                </h5>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         {/* <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>
