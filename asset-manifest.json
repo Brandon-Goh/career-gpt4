@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-gpt4/static/css/main.7809376f.css",
-    "main.js": "/career-gpt4/static/js/main.f1026350.js",
+    "main.js": "/career-gpt4/static/js/main.4ddd2356.js",
     "static/media/hero-image-1.png": "/career-gpt4/static/media/hero-image-1.33f10ca8d00cbcdb340e.png",
     "static/media/header.jpg": "/career-gpt4/static/media/header.2cb9b14bf49346eb410d.jpg",
     "static/media/hero-image-2.png": "/career-gpt4/static/media/hero-image-2.876d72184b5448408fd8.png",
@@ -44,10 +44,11 @@
     "static/media/nucleo-outline.ttf": "/career-gpt4/static/media/nucleo-outline.1102ed9b2d16dccdec05.ttf",
     "static/media/nucleo-outline.woff": "/career-gpt4/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/career-gpt4/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
+    "static/media/ln.png": "/career-gpt4/static/media/ln.33c96dcf729ea5f6c1bd.png",
     "index.html": "/career-gpt4/index.html"
   },
   "entrypoints": [
     "static/css/main.7809376f.css",
-    "static/js/main.f1026350.js"
+    "static/js/main.4ddd2356.js"
   ]
 }
