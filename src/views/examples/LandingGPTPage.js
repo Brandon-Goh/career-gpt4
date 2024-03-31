@@ -909,6 +909,12 @@ function LandingGPTPage() {
                 <h2 className="title" id="final">
                   Final Prototype
                 </h2>
+                <h3>Design Changes</h3>
+                <img
+                  alt="..."
+                  src={require("assets/img/designchanges.png")}
+                ></img>
+                <h3>Final Design</h3>
                 <img alt="..." src={require("assets/img/f1.png")}></img>
                 <img alt="..." src={require("assets/img/f2.png")}></img>
                 <h4>Example pathway: Associate software engineer</h4>
@@ -917,6 +923,10 @@ function LandingGPTPage() {
                 <h4>Example pathway: Medical school student</h4>
                 <img alt="..." src={require("assets/img/d1.png")}></img>
                 <img alt="..." src={require("assets/img/d2.png")}></img>
+                <br></br>
+                <h3></h3>
+                <h3>Data Considerations</h3>
+                <img alt="..." src={require("assets/img/datac.png")}></img>
               </Col>
             </Row>
           </Container>
