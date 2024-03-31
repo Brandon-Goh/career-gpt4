@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/career-gpt4/static/css/main.7809376f.css",
-    "main.js": "/career-gpt4/static/js/main.ea814864.js",
+    "main.js": "/career-gpt4/static/js/main.f1026350.js",
     "static/media/hero-image-1.png": "/career-gpt4/static/media/hero-image-1.33f10ca8d00cbcdb340e.png",
     "static/media/header.jpg": "/career-gpt4/static/media/header.2cb9b14bf49346eb410d.jpg",
     "static/media/hero-image-2.png": "/career-gpt4/static/media/hero-image-2.876d72184b5448408fd8.png",
     "static/media/bg6.jpg": "/career-gpt4/static/media/bg6.dc603b7416966b84ac68.jpg",
+    "static/media/designchanges.png": "/career-gpt4/static/media/designchanges.66a58d5f0f89716f99f6.png",
     "static/media/bg1.jpg": "/career-gpt4/static/media/bg1.71a28027225b8ae945bb.jpg",
     "static/media/bg11.jpg": "/career-gpt4/static/media/bg11.c6c21bd88aee67067eb6.jpg",
     "static/media/bg4.jpg": "/career-gpt4/static/media/bg4.01ad1068585185f35555.jpg",
@@ -21,6 +22,7 @@
     "static/media/B.png": "/career-gpt4/static/media/B.1239d747e832b132d8ec.png",
     "static/media/d1.png": "/career-gpt4/static/media/d1.9d96df1feb5f63bd436b.png",
     "static/media/profile.jpg": "/career-gpt4/static/media/profile.5f3b8e69153598f8dd2a.jpg",
+    "static/media/datac.png": "/career-gpt4/static/media/datac.d9fd5df4de257875360f.png",
     "static/media/hero-image-3.png": "/career-gpt4/static/media/hero-image-3.c3efe2e448da3816cf3b.png",
     "static/media/c1.png": "/career-gpt4/static/media/c1.283375ad4f7d144a1d88.png",
     "static/media/eva.jpg": "/career-gpt4/static/media/eva.258d5c64c8708a5ce23b.jpg",
@@ -46,6 +48,6 @@
   },
   "entrypoints": [
     "static/css/main.7809376f.css",
-    "static/js/main.ea814864.js"
+    "static/js/main.f1026350.js"
   ]
 }
