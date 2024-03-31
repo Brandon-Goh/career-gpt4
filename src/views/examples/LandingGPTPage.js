@@ -927,6 +927,7 @@ function LandingGPTPage() {
                 <h3></h3>
                 <h3>Data Considerations</h3>
                 <img alt="..." src={require("assets/img/datac.png")}></img>
+                <img alt="..." src={require("assets/img/ln.png")}></img>
               </Col>
             </Row>
           </Container>
