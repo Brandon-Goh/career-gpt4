@@ -38,6 +38,17 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -50; // Adjust this value as needed
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {collapseOpen ? (
@@ -49,9 +60,14 @@ function ExamplesNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
+      <Navbar
+        className={"fixed-top " + navbarColor}
+        color="info"
+        expand="lg"
+        style={{ paddingRight: "1000px" }}
+      >
         <Container>
-          <UncontrolledDropdown className="button-dropdown">
+          {/* <UncontrolledDropdown className="button-dropdown">
             <DropdownToggle
               caret
               data-toggle="dropdown"
@@ -86,7 +102,7 @@ function ExamplesNavbar() {
                 One more separated link
               </DropdownItem>
             </DropdownMenu>
-          </UncontrolledDropdown>
+          </UncontrolledDropdown> */}
           <div className="navbar-translate">
             <NavbarBrand tag={Link} to="/" id="navbar-brand">
               AICareerPal
@@ -113,18 +129,71 @@ function ExamplesNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            {/* <Nav navbar>
+            <Nav navbar style={{ width: "1400px" }}>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
+                <NavLink onClick={() => scrollToSection("problem")}>
+                  Problem
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
+                <NavLink onClick={() => scrollToSection("solution")}>
+                  Solution
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("market")}>
+                  Market Research
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("usa")}>
+                  Usability Goals
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("use")}>
+                  UX Goals
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("personas")}>
+                  User Personas
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("re")}>
+                  User Research
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink onClick={() => scrollToSection("proto")}>
+                  User Testing Protocol
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("key")}>
+                  Key Findings
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("hta")}>HTA</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("de")}>
+                  Design Iterations
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("final")}>
+                  Final Prototype
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("rfef")}>
+                  Reflections
+                </NavLink>
+              </NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -162,8 +231,8 @@ function ExamplesNavbar() {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
-              </NavItem>
-            </Nav> */}
+              </NavItem> */}
+            </Nav>
           </Collapse>
         </Container>
       </Navbar>

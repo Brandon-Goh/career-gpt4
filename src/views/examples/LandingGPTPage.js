@@ -32,14 +32,16 @@ function LandingGPTPage() {
     };
   }, []);
 
-  const columns = ["Users", "LTR Rating", "Touch Point"];
-  const rows = [
-    ["User 1", "5", "Create account"],
-    ["User 2", "5", "Upload resume"],
-    ["User 3", "6", "Explore career starting points"],
-    ["User 4", "5", "Explore career paths"],
-    ["User 5", "7", "Explore career skills & resources"],
-  ];
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -50; // Adjust this value as needed
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <ExamplesNavbar />
@@ -49,7 +51,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Problem</h2>
+                <h2 className="title" id="problem">
+                  Problem
+                </h2>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
@@ -70,7 +74,7 @@ function LandingGPTPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")",
+                        "url(" + require("assets/img/mad.jpeg") + ")",
                       width: "500px",
                     }}
                   >
@@ -152,7 +156,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Solution</h2>
+                <h2 className="title" id="solution">
+                  Solution
+                </h2>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
@@ -182,9 +188,9 @@ function LandingGPTPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")",
-                      width: "500px",
-                      marginLeft: "300px",
+                        "url(" + require("assets/img/ai.png") + ")",
+                      width: "800px",
+                      marginRight: "700px",
                     }}
                   ></div>
                 </Col>
@@ -196,7 +202,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Market Research</h2>
+                <h2 className="title" id="market">
+                  Market Research
+                </h2>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
@@ -418,7 +426,9 @@ function LandingGPTPage() {
 
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Usability Goals</h2>
+            <h2 className="title" id="usa">
+              Usability Goals
+            </h2>
             <div className="team">
               <Row>
                 <Col md="3">
@@ -482,7 +492,9 @@ function LandingGPTPage() {
 
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">User Experience Goals</h2>
+            <h2 className="title" id="use">
+              User Experience Goals
+            </h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -576,7 +588,9 @@ function LandingGPTPage() {
 
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">User Personas</h2>
+            <h2 className="title" id="personas">
+              User Personas
+            </h2>
             <div className="team">
               <Row>
                 <Col md="4">
@@ -665,7 +679,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">User Research</h2>
+                <h2 className="title" id="re">
+                  User Research
+                </h2>
                 <Button
                   className="btn-round"
                   color="info"
@@ -683,7 +699,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">User Testing Protocol</h2>
+                <h2 className="title" id="proto">
+                  User Testing Protocol
+                </h2>
                 <h4>User Experience Research Procedure</h4>
                 <h5
                   className="description"
@@ -792,7 +810,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Key Findings</h2>
+                <h2 className="title" id="key">
+                  Key Findings
+                </h2>
                 <h3>Pleasure Points</h3>
                 <p>
                   <ul
@@ -848,7 +868,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Hierarchical Task Analysis</h2>
+                <h2 className="title" id="hta">
+                  Hierarchical Task Analysis
+                </h2>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
@@ -867,7 +889,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Design Iterations</h2>
+                <h2 className="title" id="de">
+                  Design Iterations
+                </h2>
                 <h4>First Iteration</h4>
                 <img alt="..." src={require("assets/img/A.png")}></img>
                 <img alt="..." src={require("assets/img/B.png")}></img>
@@ -882,7 +906,9 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Final Prototype</h2>
+                <h2 className="title" id="final">
+                  Final Prototype
+                </h2>
                 <img alt="..." src={require("assets/img/f1.png")}></img>
                 <img alt="..." src={require("assets/img/f2.png")}></img>
                 <h4>Example pathway: Associate software engineer</h4>
@@ -899,12 +925,83 @@ function LandingGPTPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title">Reflections</h2>
+                <h2 className="title" id="rfef">
+                  Reflections
+                </h2>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
                 >
-                  TODO
+                  Throughout the development of AICareerPal, our team
+                  encountered various obstacles and made numerous decisions that
+                  ultimately shaped the final product.
+                </h5>
+                <br></br>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  One of the most significant challenges we faced was balancing
+                  the complexity of career guidance with the need for simplicity
+                  in user experience. We wanted AICareerPal to provide
+                  comprehensive support for users while ensuring that the
+                  interface remained intuitive and easy to navigate. This
+                  required careful consideration of information architecture and
+                  content presentation, as well as frequent iteration based on
+                  user feedback.
+                </h5>
+                <br></br>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Incorporating principles of cognitive ergonomics was crucial
+                  in ensuring that AICareerPal facilitated effective
+                  decision-making and task completion for users. By optimizing
+                  the design to align with cognitive processes, such as
+                  attention, memory, and problem-solving, we aimed to reduce
+                  cognitive load and enhance user satisfaction. Techniques such
+                  as chunking information, minimizing distractions, and
+                  providing clear cues were crutial in creating a seamless user
+                  experience.
+                </h5>
+                <br></br>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Another key learning experience was the importance of clarity
+                  in communication. We discovered that users often struggled to
+                  understand certain aspects of the app, such as the available
+                  career options and the steps required to pursue them. As a
+                  result, we realized the need to improve our messaging and
+                  provide more context to guide users effectively through their
+                  career exploration journey.
+                </h5>
+                <br></br>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Additionally, the process of conducting user research and
+                  testing was invaluable in shaping the direction of
+                  AICareerPal. By gathering feedback from individuals
+                  representing different user personas, we gained valuable
+                  insights into their needs, preferences, and pain points. This
+                  informed our design decisions and helped us prioritize
+                  features that would have the greatest impact on user
+                  satisfaction and success.
+                </h5>
+                <br></br>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Looking back on our work, we're proud of what we've
+                  accomplished with AICareerPal. We believe that the app has the
+                  potential to make a meaningful difference in the lives of
+                  individuals seeking guidance and support in their career
+                  journeys.
                 </h5>
               </Col>
             </Row>

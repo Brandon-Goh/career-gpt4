@@ -544,6 +544,15 @@ function UserResearchPage() {
                   </ul>
                 </div>
               </div>
+              <Button
+                className="btn-round"
+                color="info"
+                size="lg"
+                tag={Link}
+                to="/"
+              >
+                Go back to main page
+              </Button>
             </Col>
           </Row>
         </Container>
