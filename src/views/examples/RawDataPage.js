@@ -52,9 +52,11 @@ function RawDataPage() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="12">
-              <h2 className="title">Raw Data for Journey marginTop</h2>
+              <h2 className="title">Raw Data for Journey Map</h2>
+              <h3>Participant 1</h3>
               <img alt="..." src={require("assets/img/p1a.png")}></img>
               <img alt="..." src={require("assets/img/p1b.png")}></img>
+              <h3>Participant 2</h3>
               <img alt="..." src={require("assets/img/p2.png")}></img>
               <Button
                 className="btn-round"
