@@ -542,7 +542,17 @@ function LandingGPTPage() {
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
                 >
-                  Click below to be taken to the Figma wireframe.
+                  We designed our app to prioritize usability by streamlining
+                  tasks, minimizing error rates, and ensuring efficient
+                  completion times with intuitive tools. By focusing on these
+                  aspects, users can achieve their goals effectively, without
+                  frustration or unnecessary hurdles, ultimately enhancing their
+                  overall experience. <br></br> In crafting the user experience,
+                  our app aims to provide insightful career suggestions tailored
+                  to individual goals, ensuring effortless navigation,
+                  instilling confidence in user interactions, and presenting
+                  clear, relevant information. <br></br>Click below to be taken
+                  to the Figma wireframe.
                 </h5>
                 <a
                   href="https://www.figma.com/proto/PdWFjTgIohiEGbeqe9fBTm/AICareerPal?type=design&node-id=45-789&t=QoHqcL7JiADXbeF6-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=45%3A789&show-proto-sidebar=1&mode=design"
