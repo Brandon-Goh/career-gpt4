@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/career-gpt4/static/css/main.7809376f.css",
-    "main.js": "/career-gpt4/static/js/main.4ddd2356.js",
+    "main.js": "/career-gpt4/static/js/main.4e19f705.js",
     "static/media/hero-image-1.png": "/career-gpt4/static/media/hero-image-1.33f10ca8d00cbcdb340e.png",
     "static/media/header.jpg": "/career-gpt4/static/media/header.2cb9b14bf49346eb410d.jpg",
     "static/media/hero-image-2.png": "/career-gpt4/static/media/hero-image-2.876d72184b5448408fd8.png",
     "static/media/bg6.jpg": "/career-gpt4/static/media/bg6.dc603b7416966b84ac68.jpg",
-    "static/media/designchanges.png": "/career-gpt4/static/media/designchanges.66a58d5f0f89716f99f6.png",
     "static/media/bg1.jpg": "/career-gpt4/static/media/bg1.71a28027225b8ae945bb.jpg",
     "static/media/bg11.jpg": "/career-gpt4/static/media/bg11.c6c21bd88aee67067eb6.jpg",
     "static/media/bg4.jpg": "/career-gpt4/static/media/bg4.01ad1068585185f35555.jpg",
@@ -15,17 +14,21 @@
     "static/media/mad.jpeg": "/career-gpt4/static/media/mad.e043e88e703dba840ab2.jpeg",
     "static/media/bg7.jpg": "/career-gpt4/static/media/bg7.6249276d677cd6fd680e.jpg",
     "static/media/bg5.jpg": "/career-gpt4/static/media/bg5.d60a95eb31d6400f802f.jpg",
+    "static/media/dcc.png": "/career-gpt4/static/media/dcc.308f86a42137af52ca8d.png",
     "static/media/bg8.jpg": "/career-gpt4/static/media/bg8.2c89438b189a2a391f19.jpg",
     "static/media/journey-map.png": "/career-gpt4/static/media/journey-map.0e7a8556eb1fbc9098dc.png",
     "static/media/landing.jpg": "/career-gpt4/static/media/landing.6fa0380a8b02ebaadb6a.jpg",
     "static/media/DR.png": "/career-gpt4/static/media/DR.38fc726785ca58b83e53.png",
+    "static/media/p2.png": "/career-gpt4/static/media/p2.f0a47ee8f1ca53315499.png",
     "static/media/B.png": "/career-gpt4/static/media/B.1239d747e832b132d8ec.png",
+    "static/media/p1a.png": "/career-gpt4/static/media/p1a.145c990616a745096709.png",
     "static/media/d1.png": "/career-gpt4/static/media/d1.9d96df1feb5f63bd436b.png",
     "static/media/profile.jpg": "/career-gpt4/static/media/profile.5f3b8e69153598f8dd2a.jpg",
     "static/media/datac.png": "/career-gpt4/static/media/datac.d9fd5df4de257875360f.png",
     "static/media/hero-image-3.png": "/career-gpt4/static/media/hero-image-3.c3efe2e448da3816cf3b.png",
     "static/media/c1.png": "/career-gpt4/static/media/c1.283375ad4f7d144a1d88.png",
     "static/media/eva.jpg": "/career-gpt4/static/media/eva.258d5c64c8708a5ce23b.jpg",
+    "static/media/kf.png": "/career-gpt4/static/media/kf.cbd70800394de16192b8.png",
     "static/media/wew.png": "/career-gpt4/static/media/wew.afe231a655b1e18bfaa8.png",
     "static/media/comp.png": "/career-gpt4/static/media/comp.6c84aba75419bf0896ec.png",
     "static/media/f1.png": "/career-gpt4/static/media/f1.f7063fc927b9a0caccf5.png",
@@ -38,10 +41,13 @@
     "static/media/C.png": "/career-gpt4/static/media/C.13f9a721c84612ad4614.png",
     "static/media/ai.png": "/career-gpt4/static/media/ai.2592a867b5799ad552c7.png",
     "static/media/creative-tim-white-slim2.png": "/career-gpt4/static/media/creative-tim-white-slim2.c9b2f68e52151075edf1.png",
+    "static/media/p1b.png": "/career-gpt4/static/media/p1b.95f0223a5736d8e523b1.png",
     "static/media/avatar.jpg": "/career-gpt4/static/media/avatar.21d108f80102dc685d9b.jpg",
     "static/media/nucleo-outline.eot": "/career-gpt4/static/media/nucleo-outline.56814a6b7240045e1494.eot",
     "static/media/invision-white-slim.png": "/career-gpt4/static/media/invision-white-slim.292fa475599916d9cd96.png",
     "static/media/nucleo-outline.ttf": "/career-gpt4/static/media/nucleo-outline.1102ed9b2d16dccdec05.ttf",
+    "static/media/mr.avif": "/career-gpt4/static/media/mr.9bbb4c16c2e223b6f6e3.avif",
+    "static/media/fig.png": "/career-gpt4/static/media/fig.5e04ac24dbe8575f7cee.png",
     "static/media/nucleo-outline.woff": "/career-gpt4/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/career-gpt4/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "static/media/ln.png": "/career-gpt4/static/media/ln.33c96dcf729ea5f6c1bd.png",
@@ -49,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.7809376f.css",
-    "static/js/main.4ddd2356.js"
+    "static/js/main.4e19f705.js"
   ]
 }
