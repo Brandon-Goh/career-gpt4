@@ -33,14 +33,8 @@ function UserResearchHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">User Research</h1>
-            <div className="text-center">
-              <h3>
-                User research is vital for understanding the needs and behaviors
-                of users, ensuring that our product effectively meet their
-                requirements.
-              </h3>
-            </div>
+            <h1 className="title">Market Research</h1>
+            <div className="text-center"></div>
           </Container>
         </div>
       </div>

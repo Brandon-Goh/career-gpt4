@@ -37,6 +37,9 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import UserResearchPage from "views/examples/UserResearchPage";
+import MarketResearchPage from "views/examples/MarketResearchPage";
+import RawDataPage from "views/examples/RawDataPage";
+import WireframePage from "views/examples/WireframePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -45,11 +48,9 @@ root.render(
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/user-research" element={<UserResearchPage />} />
-      <Route path="/nucleo-icons" element={<NucleoIcons />} />
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/login-page" element={<LoginPage />} />
-
+      <Route path="/market-research" element={<MarketResearchPage />} />
+      <Route path="/raw-data" element={<RawDataPage />} />
+      <Route path="/wireframe" element={<WireframePage />} />
       {/* No need for the catch-all route */}
     </Routes>
   </Router>

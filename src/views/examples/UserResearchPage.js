@@ -60,23 +60,23 @@ function UserResearchPage() {
                 <ul>
                   <div>
                     <Link to="#" onClick={() => scrollToSection("1")}>
-                      Career Curious Student - Brandon’s friend
+                      Participant 1
                     </Link>
                   </div>
                   <div>
                     <Link to="#" onClick={() => scrollToSection("2")}>
-                      Career Curious Student - Sarah’s friend
+                      Participant 2
                     </Link>
                   </div>
                   <div>
                     <Link to="#" onClick={() => scrollToSection("3")}>
-                      Career Curious Student - Anushka’s sister
+                      Participant 3
                     </Link>
                   </div>
                 </ul>
               </div>
               <h3 className="title" id="1">
-                Career Curious Student - Brandon’s friend
+                Participant 1
               </h3>
               <div>
                 <h3>
@@ -250,7 +250,7 @@ function UserResearchPage() {
                 </ul>
               </div>
               <h3 className="title" id="2">
-                Career Curious Student - Sarah’s friend
+                Participant 2
               </h3>
               <div>
                 <div>
@@ -390,7 +390,7 @@ function UserResearchPage() {
                 </div>
               </div>
               <h3 className="title" id="3">
-                Career Curious Student - Anushka’s sister
+                Participant 3
               </h3>
               <div>
                 <div>

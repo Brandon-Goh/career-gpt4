@@ -140,6 +140,19 @@ function LandingGPTPage() {
                     </ul>
                   </p>
                 </Col>
+                <Col className="ml-auto mr-auto text-center" md="12">
+                  <h2 className="title" id="sis">
+                    Situation Impact Statement
+                  </h2>
+                  <h5
+                    className="description"
+                    style={{ color: "black", fontWeight: "500" }}
+                  >
+                    Design an app to be used by post-secondary students that
+                    provides guidance, personalized recommendations and adequate
+                    resources for potential careers.
+                  </h5>
+                </Col>
               </Row>
             </div>
           </Container>
@@ -172,27 +185,105 @@ function LandingGPTPage() {
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
               <Row>
-                <Col md="5">
-                  <h3>Situation Impact Statement</h3>
-                  <h5
-                    className="description"
-                    style={{ color: "black", fontWeight: "500" }}
-                  >
-                    Design an app to be used by post-secondary students that
-                    provides guidance, personalized recommendations and adequate
-                    resources for potential careers.
-                  </h5>
-                </Col>
-                <Col md="6">
+                <Col md="12">
                   <div
                     className="image-container image-left"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/ai.png") + ")",
-                      width: "800px",
-                      marginRight: "700px",
+                      // width: "800px",
+                      // marginRight: "99700px",
                     }}
                   ></div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <h2 className="title" id="personas">
+              User Personas
+            </h2>
+            <div className="team">
+              <Row>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/avatar.jpg")}
+                    ></img>
+                    <h4 className="title">Career Focused Student</h4>
+                    <p className="category text-info">Persona one</p>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      A user who knows their dream career and have been able to
+                      find work opportunities in the field.
+                    </p>
+                    {/* <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button> */}
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/ryan.jpg")}
+                    ></img>
+                    <h4 className="title">Career Starter Student</h4>
+                    <p className="category text-info">Persona two</p>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      A user who knows their dream career, however, they do not
+                      know how to pursue it.
+                    </p>
+                    {/* <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button> */}
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/eva.jpg")}
+                    ></img>
+                    <h4 className="title">Career Curious Student</h4>
+                    <p className="category text-info">Persona three</p>
+                    <p
+                      className="description"
+                      style={{ color: "black", fontWeight: "500" }}
+                    >
+                      A user who does not have a dream career but would like to
+                      determine one.
+                    </p>
+                    {/* <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-google-plus"></i>
+                    </Button> */}
+                  </div>
                 </Col>
               </Row>
             </div>
@@ -216,214 +307,57 @@ function LandingGPTPage() {
                   their end goal (ex. dream job) and provide guidance on how to
                   get there.
                 </h5>
+                <Button
+                  className="btn-round"
+                  color="info"
+                  size="lg"
+                  tag={Link}
+                  to="/market-research"
+                >
+                  Go to market research
+                </Button>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
               <Row>
-                <Col md="5">
-                  <p style={{ color: "black", fontWeight: "500" }}>
-                    <table
-                      style={{
-                        width: "1200px",
-                        borderCollapse: "collapse",
-                        border: "1px solid black",
-                      }}
-                    >
-                      <thead>
-                        <tr>
-                          <th style={{ border: "1px solid black" }}>
-                            Competitor
-                          </th>
-                          <th style={{ border: "1px solid black" }}>
-                            Description
-                          </th>
-                          <th style={{ border: "1px solid black" }}>
-                            Main Features
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
-                              LinkedIn
-                            </a>
-                            <br></br>
-                            {/* <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
-                              alt="LinkedIn Logo"
-                              style={{
-                                width: "50px",
-                                margin: "auto",
-                                display: "block",
-                              }}
-                            /> */}
-                          </td>
-                          <td
-                            style={{ border: "1px solid black", width: "60%" }}
-                          >
-                            This tool is a social networking platform focused on
-                            employment. It uses AI algorithms for suggesting
-                            network connections, making job recommendations, and
-                            populating social media feed.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Potential employees:</li>
-                              <ul>
-                                <li>Job recommendations</li>
-                                <li>Connection recommendations</li>
-                                <li>AI-assisted messages</li>
-                              </ul>
-                              <li>Employers:</li>
-                              <ul>
-                                <li>Generating job descriptions</li>
-                              </ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://www.jobcopy.io/">Jobcopy</a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            This tool uses an AI model to write resumes and
-                            cover letters for specific jobs.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Job-seekers:</li>
-                              <ul>
-                                <li>Job compatibility calculator</li>
-                                <li>Resume generator</li>
-                                <li>Cover letter generator</li>
-                                <li>Interview Q&A generator</li>
-                              </ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://applypass.com/">ApplyPass</a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            This tool automatically matches profiles to jobs and
-                            applies on behalf of the applicant using AI.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Job-appliers:</li>
-                              <ul>
-                                <li>Profile matching with jobs</li>
-                                <li>
-                                  Auto-fill and submissions of job applications
-                                </li>
-                              </ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://www.finalroundai.com/interview-copilot">
-                              Final Round AI
-                            </a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            This tool uses AI-powered chatbots to help prepare
-                            users for interviews. It is also used unethically
-                            during actual interviews.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Job-interviewers:</li>
-                              <ul>
-                                <li>Live transcription</li>
-                                <li>AI-powered mock interviews</li>
-                                <li>Technical assessment support</li>
-                                <li>Case analysis support</li>
-                              </ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://www.futurefit.ai/">FutureFit AI</a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            Given a career starting point, this tool helps
-                            navigate users to the best career destination by
-                            sharing learning opportunities, resources, and jobs.
-                            Recommendations are based on an AI model that
-                            leverages data related to the labor market.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Career-seekers:</li>
-                              <ul>
-                                <li>
-                                  Assessments to figure out career starting
-                                  point
-                                </li>
-                                <li>Recommendations for career destination</li>
-                                <li>Educational programs to teach skills</li>
-                                <li>Resources for job preparation</li>
-                                <li>Work opportunities</li>
-                              </ul>
-                              <li>Career coaches:</li>
-                              <ul>
-                                <li>Send resources</li>
-                                <li>Track progress</li>
-                                <li>Document notes</li>
-                              </ul>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://myblueprint.ca/">Blueprint</a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            A tool used in high school to help students figure
-                            out an appropriate career path and then take
-                            appropriate courses in preparation for applying to
-                            relevant university programs.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Personality quiz for career selection</li>
-                              <li>University program recommendations</li>
-                              <li>Course planning guide</li>
-                            </ul>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ border: "1px solid black" }}>
-                            <a href="https://careergpt.xyz/">CareerGPT</a>
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            An AI tool that helps connect professionals with
-                            appropriate career coaches.
-                          </td>
-                          <td style={{ border: "1px solid black" }}>
-                            <ul>
-                              <li>Resume review</li>
-                              <li>Candidate search</li>
-                              <li>Recruiter search</li>
-                              <li>Career coach connection</li>
-                            </ul>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </p>
-                </Col>
                 <img alt="..." src={require("assets/img/comp.png")}></img>
               </Row>
             </div>
           </Container>
         </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title" id="re">
+                  User Research
+                </h2>
 
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  User research is vital for understanding the needs and
+                  behaviors of users, ensuring that products and services
+                  effectively meet their requirements. By gathering insights
+                  through research, teams can validate assumptions, improve user
+                  experiences, and drive innovation, ultimately reducing the
+                  risk of building unsuccessful products.
+                </h5>
+                <Button
+                  className="btn-round"
+                  color="info"
+                  size="lg"
+                  tag={Link}
+                  to="/user-research"
+                >
+                  Go to user research
+                </Button>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <div className="section section-team text-center">
           <Container>
             <h2 className="title" id="usa">
@@ -438,9 +372,7 @@ function LandingGPTPage() {
                       className="description"
                       style={{ color: "black", fontWeight: "500" }}
                     >
-                      <lu>
-                        <li>Time to complete tasks</li>
-                      </lu>
+                      Time to complete tasks
                     </p>
                   </div>
                 </Col>
@@ -451,10 +383,8 @@ function LandingGPTPage() {
                       className="description"
                       style={{ color: "black", fontWeight: "500" }}
                     >
-                      <lu>
-                        <li>Time to complete tasks</li>
-                        <li>Error rates</li>
-                      </lu>
+                      Time to complete tasks<br></br>
+                      Error rates
                     </p>
                   </div>
                 </Col>
@@ -465,9 +395,7 @@ function LandingGPTPage() {
                       className="description"
                       style={{ color: "black", fontWeight: "500" }}
                     >
-                      <lu>
-                        <li>Time to complete tasks with available tools</li>
-                      </lu>
+                      Time to complete tasks with available tools
                     </p>
                   </div>
                 </Col>
@@ -478,10 +406,7 @@ function LandingGPTPage() {
                       className="description"
                       style={{ color: "black", fontWeight: "500" }}
                     >
-                      <lu>
-                        <li>Time to complete tasks</li>
-                        <li>Error rates</li>
-                      </lu>
+                      Time to complete tasks<br></br>Error rates
                     </p>
                   </div>
                 </Col>
@@ -585,112 +510,47 @@ function LandingGPTPage() {
             </div>
           </Container>
         </div>
-
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title" id="personas">
-              User Personas
-            </h2>
-            <div className="team">
-              <Row>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg")}
-                    ></img>
-                    <h4 className="title">Career Focused Student</h4>
-                    <p className="category text-info">Persona one</p>
-                    <p
-                      className="description"
-                      style={{ color: "black", fontWeight: "500" }}
-                    >
-                      A user who knows their dream career and have been able to
-                      find work opportunities in the field.
-                    </p>
-                    {/* <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button> */}
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
-                    ></img>
-                    <h4 className="title">Career Starter Student</h4>
-                    <p className="category text-info">Persona two</p>
-                    <p
-                      className="description"
-                      style={{ color: "black", fontWeight: "500" }}
-                    >
-                      A user who knows their dream career, however, they do not
-                      know how to pursue it.
-                    </p>
-                    {/* <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button> */}
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
-                    ></img>
-                    <h4 className="title">Career Curious Student</h4>
-                    <p className="category text-info">Persona three</p>
-                    <p
-                      className="description"
-                      style={{ color: "black", fontWeight: "500" }}
-                    >
-                      A user who does not have a dream career but would like to
-                      determine one.
-                    </p>
-                    {/* <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button> */}
-                  </div>
-                </Col>
-              </Row>
-            </div>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title" id="hta">
+                  Hierarchical Task Analysis
+                </h2>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  A hierarchical task analysis was used to arrange the key
+                  functionality into a hierarchical format. This helped
+                  determine the main workflows and pages that would be required
+                  in the mobile application.
+                </h5>
+                <img alt="..." src={require("assets/img/wew.png")}></img>
+              </Col>
+            </Row>
           </Container>
         </div>
         <div className="section section-team text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title" id="re">
-                  User Research
+                <h2 className="title" id="de">
+                  Low Fidelity Prototype
                 </h2>
-                <Button
-                  className="btn-round"
-                  color="info"
-                  size="lg"
-                  tag={Link}
-                  to="/user-research"
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
                 >
-                  Go to user research
-                </Button>
+                  Click below to be taken to the Figma wireframe.
+                </h5>
+                <a
+                  href="https://www.figma.com/proto/PdWFjTgIohiEGbeqe9fBTm/AICareerPal?type=design&node-id=45-789&t=QoHqcL7JiADXbeF6-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=45%3A789&show-proto-sidebar=1&mode=design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img alt="..." src={require("assets/img/fig.png")} />
+                </a>
               </Col>
             </Row>
           </Container>
@@ -703,12 +563,6 @@ function LandingGPTPage() {
                   User Testing Protocol
                 </h2>
                 <h4>User Experience Research Procedure</h4>
-                <h5
-                  className="description"
-                  style={{ color: "black", fontWeight: "500" }}
-                >
-                  Participants: 3 - 1 persona for each
-                </h5>
                 <h5
                   className="description"
                   style={{ color: "black", fontWeight: "500" }}
@@ -737,6 +591,22 @@ function LandingGPTPage() {
                   alt="..."
                   src={require("assets/img/journey-map.png")}
                 ></img>
+                <h2></h2>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Below is a link to the raw data collected for the journey map.
+                </h5>
+                <Button
+                  className="btn-round"
+                  color="info"
+                  size="lg"
+                  tag={Link}
+                  to="/raw-data"
+                >
+                  Go to raw data
+                </Button>
                 {/* <h4>Round 2: Usability Research Procedure</h4>
               <h5
                 className="description"
@@ -813,95 +683,25 @@ function LandingGPTPage() {
                 <h2 className="title" id="key">
                   Key Findings
                 </h2>
-                <h3>Pleasure Points</h3>
-                <p>
-                  <ul
-                    style={{
-                      listStyleType: "circle",
-                      textAlign: "center",
-                      // width: "600px",
-                      color: "black",
-                      fontWeight: "500",
-                    }}
-                  >
-                    <li>
-                      Users felt that they could easily explore and effectively
-                      evaluate career options.
-                    </li>
-                    <li>
-                      Users enjoyed the simplistic design and felt the solution
-                      was intuitive.
-                    </li>
-                    <li>
-                      Users appreciated the guidance and resources provided for
-                      skill development.
-                    </li>
-                  </ul>
-                </p>
-                <h3>Pain Points</h3>
-                <p>
-                  <ul
-                    style={{
-                      listStyleType: "circle",
-                      textAlign: "center",
-                      // width: "600px",
-                      color: "black",
-                      fontWeight: "500",
-                    }}
-                  >
-                    <li>
-                      Users often required clarification surrounding the content
-                      presented.
-                    </li>
-                    <li>Users felt the career options were limited.</li>
-                    <li>
-                      Users felt that there was no clear end to the user
-                      journey.
-                    </li>
-                  </ul>
-                </p>
+                <img alt="..." src={require("assets/img/kf.png")}></img>
               </Col>
             </Row>
           </Container>
         </div>
+
         <div className="section section-team text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title" id="hta">
-                  Hierarchical Task Analysis
+                <h2 className="title" id="key">
+                  Design Recommendations
                 </h2>
-                <h5
-                  className="description"
-                  style={{ color: "black", fontWeight: "500" }}
-                >
-                  A hierarchical task analysis was used to arrange the key
-                  functionality into a hierarchical format. This helped
-                  determine the main workflows and pages that would be required
-                  in the mobile application.
-                </h5>
-                <img alt="..." src={require("assets/img/wew.png")}></img>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="section section-team text-center">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="12">
-                <h2 className="title" id="de">
-                  Design Iterations
-                </h2>
-                <h4>First Iteration</h4>
-                <img alt="..." src={require("assets/img/A.png")}></img>
-                <img alt="..." src={require("assets/img/B.png")}></img>
-                <img alt="..." src={require("assets/img/C.png")}></img>
-                <h4>Design Recommendations</h4>
                 <img alt="..." src={require("assets/img/DR.png")}></img>
               </Col>
             </Row>
           </Container>
         </div>
+
         <div className="section section-team text-center">
           <Container>
             <Row>
@@ -910,19 +710,48 @@ function LandingGPTPage() {
                   Final Prototype
                 </h2>
                 <h3>Design Changes</h3>
-                <img
-                  alt="..."
-                  src={require("assets/img/designchanges.png")}
-                ></img>
+                <img alt="..." src={require("assets/img/dcc.png")}></img>
+                <br></br>
+                <h3></h3>
                 <h3>Final Design</h3>
-                <img alt="..." src={require("assets/img/f1.png")}></img>
-                <img alt="..." src={require("assets/img/f2.png")}></img>
-                <h4>Example pathway: Associate software engineer</h4>
-                <img alt="..." src={require("assets/img/c1.png")}></img>
-                <img alt="..." src={require("assets/img/c2.png")}></img>
-                <h4>Example pathway: Medical school student</h4>
-                <img alt="..." src={require("assets/img/d1.png")}></img>
-                <img alt="..." src={require("assets/img/d2.png")}></img>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  Click below to be taken to the Figma wireframe.<br></br> Left
+                  is the associate software engineer path | Right is the medical
+                  school student path
+                </h5>
+
+                <a
+                  href="https://www.figma.com/proto/PdWFjTgIohiEGbeqe9fBTm/AICareerPal?type=design&node-id=126-638&t=QoHqcL7JiADXbeF6-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=126%3A638&show-proto-sidebar=1&mode=design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img alt="..." src={require("assets/img/fig.png")} />
+                </a>
+                <a
+                  href="https://www.figma.com/proto/PdWFjTgIohiEGbeqe9fBTm/AICareerPal?type=design&node-id=160-1852&t=QoHqcL7JiADXbeF6-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=160%3A1852&show-proto-sidebar=1&mode=design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img alt="..." src={require("assets/img/fig.png")} />
+                </a>
+                <h5
+                  className="description"
+                  style={{ color: "black", fontWeight: "500" }}
+                >
+                  The full wireframes in map view are also provided below.
+                </h5>
+                <Button
+                  className="btn-round"
+                  color="info"
+                  size="lg"
+                  tag={Link}
+                  to="/wireframe"
+                >
+                  Go to full wireframe map
+                </Button>
                 <br></br>
                 <h3></h3>
                 <h3>Data Considerations</h3>

@@ -141,10 +141,20 @@ function ExamplesNavbar() {
                 </NavLink>
               </NavItem>{" "}
               <NavItem>
+                <NavLink onClick={() => scrollToSection("personas")}>
+                  User Personas
+                </NavLink>
+              </NavItem>{" "}
+              <NavItem>
                 <NavLink onClick={() => scrollToSection("market")}>
                   Market Research
                 </NavLink>
               </NavItem>{" "}
+              <NavItem>
+                <NavLink onClick={() => scrollToSection("re")}>
+                  User Research
+                </NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink onClick={() => scrollToSection("usa")}>
                   Usability Goals
@@ -156,13 +166,11 @@ function ExamplesNavbar() {
                 </NavLink>
               </NavItem>{" "}
               <NavItem>
-                <NavLink onClick={() => scrollToSection("personas")}>
-                  User Personas
-                </NavLink>
-              </NavItem>{" "}
+                <NavLink onClick={() => scrollToSection("hta")}>HTA</NavLink>
+              </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollToSection("re")}>
-                  User Research
+                <NavLink onClick={() => scrollToSection("de")}>
+                  Low-Fi Prototype
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -176,14 +184,6 @@ function ExamplesNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollToSection("hta")}>HTA</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink onClick={() => scrollToSection("de")}>
-                  Design Iterations
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink onClick={() => scrollToSection("final")}>
                   Final Prototype
                 </NavLink>
@@ -193,45 +193,6 @@ function ExamplesNavbar() {
                   Reflections
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>
