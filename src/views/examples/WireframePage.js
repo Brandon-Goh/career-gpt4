@@ -52,7 +52,7 @@ function WireframePage() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="12">
-              <h4>Low Fidelity Prototype</h4>
+              <h4>Initial Iteration</h4>
               <img alt="..." src={require("assets/img/A.png")}></img>
               <img alt="..." src={require("assets/img/B.png")}></img>
               <img alt="..." src={require("assets/img/C.png")}></img>

@@ -63,6 +63,7 @@ function LandingGPTPage() {
                   personal interests. Many people struggle to identify the
                   necessary steps and resources required to achieve their goals,
                   which can lead to feelings of frustration and hopelessness.
+                  [1] [2]
                 </h5>
               </Col>
             </Row>
@@ -321,7 +322,7 @@ function LandingGPTPage() {
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
               <Row>
-                <img alt="..." src={require("assets/img/comp.png")}></img>
+                <img alt="..." src={require("assets/img/comr.png")}></img>
               </Row>
             </div>
           </Container>
@@ -536,7 +537,7 @@ function LandingGPTPage() {
             <Row>
               <Col className="ml-auto mr-auto text-center" md="12">
                 <h2 className="title" id="de">
-                  Low Fidelity Prototype
+                  Initial Iteration
                 </h2>
                 <h5
                   className="description"
@@ -582,6 +583,11 @@ function LandingGPTPage() {
                       Ask users to walk through wireframes, talking aloud about
                       what they are doing, feeling and thinking.
                     </li>
+                    <li>
+                      User experience flow was analyzed using a user journey map
+                      [10].
+                    </li>
+                    <li>Usability issues were recorded.</li>
                     <li>
                       After each touch point ask the participant about any pain
                       points they encountered and their LTR score from 1-7.
@@ -706,7 +712,7 @@ function LandingGPTPage() {
                 <h2 className="title" id="key">
                   Design Recommendations
                 </h2>
-                <img alt="..." src={require("assets/img/DR.png")}></img>
+                <img alt="..." src={require("assets/img/bgoh.png")}></img>
               </Col>
             </Row>
           </Container>
@@ -765,8 +771,7 @@ function LandingGPTPage() {
                 <br></br>
                 <h3></h3>
                 <h3>Data Considerations</h3>
-                <img alt="..." src={require("assets/img/datac.png")}></img>
-                <img alt="..." src={require("assets/img/ln.png")}></img>
+                <img alt="..." src={require("assets/img/dc3.png")}></img>
               </Col>
             </Row>
           </Container>
@@ -853,6 +858,18 @@ function LandingGPTPage() {
                   individuals seeking guidance and support in their career
                   journeys.
                 </h5>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="section section-team text-center">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="12">
+                <h2 className="title" id="">
+                  References
+                </h2>
+                <img alt="..." src={require("assets/img/refer2.png")}></img>
               </Col>
             </Row>
           </Container>
